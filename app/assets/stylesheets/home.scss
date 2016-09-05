@@ -1,3 +1,40 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "neat";
+
+#main {
+  @include outer-container();
+  background-color: antiquewhite;
+}
+
+#top-row {
+  @include span-columns(12);
+}
+
+#image-home {
+  @include span-columns(12);
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#middle-row {
+  @include span-columns(12);
+}
+
+#home-video {
+  @include shift(2 of 12);
+  @include span-columns(8 of 12);
+  iframe {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+#bottom-row{
+  @include span-columns(12);
+}
