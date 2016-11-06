@@ -3,6 +3,39 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "neat";
 
+.top-navbar {
+  position: absolute;
+  background-color: transparent;
+  padding: 0 2em 0 1em;
+  width: 100vw;
+
+  h1 {
+    float: left;
+    color: white;
+    font-weight: 100;
+    line-height: 1;
+  }
+
+  ul {
+    list-style: none;
+    float: right;
+    text-align: left;
+    margin: 1.5em 0 1em 0;
+
+    li {
+      display: inline-block;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        padding: 1em 1em 1em 3em;
+      }
+    }
+  }
+
+
+}
+
 header {
   background:
     linear-gradient(
