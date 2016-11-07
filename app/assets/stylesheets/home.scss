@@ -9,11 +9,14 @@
   padding: 0 2em 0 1em;
   width: 100vw;
 
-  h1 {
+  .nav-logo {
     float: left;
-    color: white;
-    font-weight: 100;
-    line-height: 1;
+    width: 9em;
+    height: auto;
+
+    a {
+      display: block;
+    }
   }
 
   ul {
@@ -29,6 +32,7 @@
         text-decoration: none;
         color: #fff;
         padding: 1em 1em 1em 3em;
+        font-weight: 100;
       }
     }
   }
@@ -42,7 +46,7 @@ header {
       rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.5)
       ),
-    url(zen-path-rocks.jpg);
+    url(zen-rocks-path.png);
   background-size: cover;
   height: 100vh;
 }
