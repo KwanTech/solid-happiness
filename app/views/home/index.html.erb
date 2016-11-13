@@ -1,17 +1,5 @@
-<nav class="top-navbar">
-  <div class="nav-logo">
-    <a href="/" class="home">
-      <%= render "home/partials/nav_logo" %>
-    </a>
-  </div>
-  <ul>
-    <li><%= link_to "Why" %></li>
-    <li><%= link_to "How" %></li>
-    <li><%= link_to "What" %></li>
-    <li><%= link_to "Blog" %></li>
-    <li><%= link_to "Register" %></li>
-  </ul>
-</nav>
+<%= render "shared/top_navbar" %>
+
 <header>
   <div class="hero-message">
     <h1>Learn To <strong>Evolve</strong></h1>
@@ -19,47 +7,7 @@
 </header>
 
 <div id="main">
-  <%= render "middle_row" %>
+  <%= render "home/partials/middle_row" %>
 
-  <section id="bottom-row">
-    <div id="why">
-      <h2>We Believe:</h2>
-      <ul>
-        <li>
-          In evolving personally and professionally.  Life’s a journey so progress is how we achieve success in that journey.
-        </li>
-        <li>
-          Business is a vehicle for positive impact on society, workers, the community, and the environment in addition to profit as its legally defined goals.
-        </li>
-        <li>
-          Leadership is a responsibility, not a rank.  Leaders have a responsibility of putting the well being of others before the well being of the themselves.
-        </li>
-      </ul>
-    </div>
-    <div id="how">
-      <h2>The way we execute:</h2>
-      <ul>
-        <li>
-          We want more handshake conversations, handshake debates, handshake friends, handshake leadership.  Technology cannot replace human connection. (You cannot form trust through the internet).
-        </li>
-        <li>
-          Deep insight into job culture, market, and position requirements.  We hire professionals and educate ourselves when we are going to buy a house or invest our retirement savings.  We should have career advisors.
-        </li>
-        <li>
-          Acts of kindness and generosity.  More personal communication.
-        </li>
-      </ul>
-    </div>
-    <div id="what">
-      <h2>What We Do:</h2>
-      <ul>
-        <li>
-          Ambassadors of Quan:  People who spend time and effort helping you do the best you can at finding a new position.  Jerry McGuire Ambassador of Quan: Guide, walk, and help you through the whole process.
-        </li>
-        <li>
-          Company will be designed and run as a Mutual Organization: https://en.wikipedia.org/wiki/Mutual_organization    A mutual organization is owned by, and run for the benefit of, its members (it has no external shareholders).  Members usually do not contribute to the capital of the company by direct investment, but derive their right to profits and votes through their customer relationship.  Quan (cooperative) will own Shoshin (software development/product company).  Shoshin will provide services to Quan at cost.  Developers, engineers, or designers who’ve worked hard to acquire the skills needed to do the job should get paid for the acquisition of those same skills.
-        </li>
-      </ul>
-    </div>
-  </section>
+  <%= render "home/partials/bottom_row" %>
 </div>
