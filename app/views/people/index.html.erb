@@ -1,0 +1,30 @@
+<section class="register">
+  <%= form_for @person do |f| %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+
+    <%= f.label :your_why %>
+    <%= f.text_field :your_why %>
+
+    <%= f.label :what_areas_of_growth_interest_you %>
+    <%= f.text_area :what_areas_of_growth_interest_you %>
+
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+
+    <%= f.label :occupation %>
+    <%= f.text_field :occupation %>
+
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+
+    <%= label_tag :confirm_password %>
+    <%= text_field_tag :confirm_password %>
+
+
+    <%= f.submit %>
+  <% end %>
+</section>
