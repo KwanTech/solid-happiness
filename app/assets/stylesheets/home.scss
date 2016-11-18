@@ -40,12 +40,22 @@ header {
 
 #home-video {
   @include shift(2 of 12);
-  @include span-columns(4 of 12);
+  @include span-columns(4);
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+
+  @include media(max-width 950px) {
+    @include shift(1 of 12);
+    @include span-columns(5);
+  }
+
+  @include media(max-width 755px) {
+    @include shift(0 of 12);
+    @include span-columns(12); // or whatever you need for 100% width
+  }
 
   iframe {
     display: block;
@@ -53,12 +63,22 @@ header {
 }
 
 .quan-ambo-message {
-  @include span-columns(4 of 12);
+  @include span-columns(4);
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+
+  @include media(max-width 950px) {
+    @include shift(1 of 12);
+    @include span-columns(5);
+  }
+
+  @include media(max-width 755px) {
+    @include shift(0 of 12);
+    @include span-columns(12); // or whatever you need for 100% width
+  }
 
   h1, h2 {
     margin-top: .25em;
@@ -88,7 +108,7 @@ header {
 
   .how {
     @include shift(3 of 12);
-    @include span-columns(6 of 12);
+    @include span-columns(6);
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
