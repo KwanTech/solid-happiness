@@ -106,7 +106,7 @@ header {
   width: 100%;
   height: 100vh;
 
-  .how {
+  .dalai-lama {
     @include shift(3 of 12);
     @include span-columns(6);
     position: relative;
@@ -115,27 +115,22 @@ header {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 
-    h1, h2 {
+    .man {
       color: white;
       margin-top: .25em;
       margin-bottom: .25em;
+      text-align: center;
+      font-style: italic;
     }
 
-    .create {
-      text-align: center;
-      font-size: 2.5em;
-      font-weight: 100;
-    }
-
-    .learnable-skill {
-      text-align: center;
-      font-size: 4.5em;
-    }
-
-    .mission {
-      text-align: center;
+    .humanity {
       font-size: 1.5em;
       font-weight: 100;
+    }
+
+    .sacrifices-his-health {
+      font-size: 2.5em;
+      font-weight: 400;
     }
   }
 }
