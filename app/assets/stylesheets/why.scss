@@ -5,7 +5,10 @@
 .why,
 .how,
 .what {
-  h1, h2, li {
+  h1 {
+    font-weight: 500;
+  }
+  h2, li {
     font-weight: 100;
   }
 }
