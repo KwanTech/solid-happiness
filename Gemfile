@@ -22,7 +22,6 @@ gem 'jbuilder', '=2.6.0'
 gem 'sdoc', '= 0.4.1', group: :doc
 
 # Loads environment variables from `.env`.
-gem 'dotenv', '=2.1.1'
 
 gem 'tumblr_client', '=0.8.5'
 
@@ -41,6 +40,7 @@ end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'dotenv', '=2.1.1'
   gem 'byebug', '=9.0.5'
   gem "better_errors", '=2.1.1'
 

@@ -198,7 +198,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  better_errors
+  better_errors (= 2.1.1)
   byebug (= 9.0.5)
   capybara (= 2.10.1)
   dotenv (= 2.1.1)
@@ -211,7 +211,7 @@ DEPENDENCIES
   sass-rails (= 5.0.6)
   sdoc (= 0.4.1)
   spring (= 1.7.2)
-  tumblr_client
+  tumblr_client (= 0.8.5)
   turbolinks (= 5.0.1)
   uglifier (= 3.0.2)
   web-console (= 2.3.0)
