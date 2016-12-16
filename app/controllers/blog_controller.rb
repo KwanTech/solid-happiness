@@ -3,11 +3,11 @@ require 'json'
 class BlogController < ApplicationController
 
   def index
-    @posts = tumblr_blog_client.posts('ltrainpr.tumblr.com', limit: 10, tag: 'ruby')
+    @posts = tumblr_blog_client.posts('ltrainpr.tumblr.com', tag: 'imagination')["posts"]
 
     respond_to do |format|
       format.html
-      format.json { render json: JSON.pretty_generate(@posts)}
+      format.json { render json: JSON.generate(@posts)}
     end
   end
 
