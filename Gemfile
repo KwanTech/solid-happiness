@@ -40,7 +40,7 @@ end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'dotenv', '=2.1.1'
+  gem 'dotenv-rails', '=2.1.1'
   gem 'byebug', '=9.0.5'
   gem "better_errors", '=2.1.1'
 
