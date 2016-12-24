@@ -3,6 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "neat";
 
+.home .top-navbar-white {
+  ul li a {
+    color: #fff;
+  }
+}
+
 header {
   background:
     linear-gradient(

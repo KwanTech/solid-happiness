@@ -3,7 +3,7 @@ require 'json'
 class BlogController < ApplicationController
 
   def index
-    @posts = tumblr_blog_client.posts('ltrainpr.tumblr.com', tag: 'imagination')["posts"]
+    @posts = tumblr_blog_client.posts('ltrainpr.tumblr.com', limit: 10, tag: 'imagination')["posts"]
 
     respond_to do |format|
       format.html

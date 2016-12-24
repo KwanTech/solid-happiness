@@ -1,0 +1,35 @@
+@import "neat";
+
+.blog .top-navbar-black {
+  ul li a {
+    color: #000;
+  }
+}
+
+#blogs {
+  @include outer-container(1920px);
+  margin-top: 5.5em;
+
+  .post {
+    @include shift(1 of 12);
+    @include span-columns(8);
+
+    .title {
+      text-align: center;
+      font-size: 2em;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.1em;
+      font-weight: 100;
+    }
+  }
+
+  .register-email {
+    @include span-columns(3);
+    border: 2px solid;
+    height: 15em;
+    margin-top: 1.66em;
+  }
+}
