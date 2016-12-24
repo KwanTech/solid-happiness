@@ -2,7 +2,8 @@ source 'https://rubygems.org'
 
 ruby "2.3.1"
 gem 'rails', '=5.0.0'
-gem 'pg'
+gem 'pg', '=0.18.4'
+gem 'puma', '=3.6.2'
 gem 'sass-rails', '=5.0.6'
 
 # Use Uglifier as compressor for JavaScript assets
@@ -15,7 +16,7 @@ gem 'jquery-rails', '=4.2.1'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '=5.0.1'
 # Neat is a fluid grid framework with the aim of being easy enough to use out of the box and flexible enough to customize down the road.
-gem 'neat'
+gem 'neat', '=1.8.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '=2.6.0'
 # bundle exec rake doc:rails generates the API under doc/api.
@@ -51,4 +52,3 @@ group :development, :test do
   gem 'rspec-rails', '=3.5.2'
   gem 'capybara', '=2.10.1'
 end
-
