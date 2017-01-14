@@ -42,6 +42,33 @@ header.why {
   height: 100vh;
 }
 
+section.why-how-what {
+  @include outer-container(1920px);
+  height: 100vh;
+
+  h1 {
+    @include shift(2 of 12);
+    @include span-columns(2);
+  }
+
+  ul {
+    @include span-columns(6);
+  }
+
+  // .why, .how, .what {
+
+  // }
+
+  .why, .how {
+    height: 33.33vh;
+  }
+
+  .what {
+    height: 33.34vh;
+  }
+
+}
+
 footer.why {
   background:
     linear-gradient(
