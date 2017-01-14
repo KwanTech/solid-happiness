@@ -3,15 +3,25 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "neat";
 
-.mission,
-.why,
-.how,
-.what {
+.why .hero-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+
   h1 {
-    font-weight: 500;
+    font-size: 3.5em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
-  h2, li {
+
+  h2 {
     font-weight: 100;
+    font-size: 0.8em;
+    letter-spacing: .14em;
   }
 }
 
