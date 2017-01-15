@@ -3,7 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "neat";
 
-header {
+.home .top-navbar-white {
+  ul li a {
+    color: #fff;
+  }
+}
+
+header.home {
   background:
     linear-gradient(
       rgba(0, 0, 0, 0.5),
@@ -14,7 +20,7 @@ header {
   height: 100vh;
 }
 
-.hero-message {
+.home .hero-message {
   position: absolute;
   top: 50%;
   left: 50%;

@@ -1,14 +1,126 @@
 // Place all the styles related to the Why controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.mission,
-.why,
-.how,
-.what {
+@import "neat";
+
+$blue-text: rgb(41,171,226);
+$earth-text: rgb(153,134,117);
+$green-text: rgb(61,92,77);
+
+$blue-background: rgb(217,232,242);
+$earth-background: rgb(245,232,222);
+$green-background: rgb(217,232,212);
+
+.why .hero-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+
   h1 {
-    font-weight: 500;
+    font-size: 3.5em;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
   }
-  h2, li {
+
+  h2 {
     font-weight: 100;
+    font-size: 0.8em;
+    letter-spacing: .14em;
   }
+}
+
+.why .top-navbar-white {
+  ul li a {
+    color: #fff;
+  }
+}
+
+header.why {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+      ),
+    url(people-team.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+section.why-how-what {
+  @include outer-container(1920px);
+  height: 100vh;
+
+  .heading {
+    @include shift(2 of 12);
+    @include span-columns(2);
+  }
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    font-weight: 100;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+
+  ul {
+    @include span-columns(6);
+    position: relative;
+    top: 10%;
+
+    li {
+      font-size: 0.7em;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  .why, .how {
+    height: 33.33vh;
+  }
+
+  .what {
+    height: 33.34vh;
+  }
+
+  article.why {
+    background-image: radial-gradient(ellipse at bottom, $blue-background, white 80%);
+
+    h1 {
+      color: $blue-text;
+    }
+  }
+
+  article.how {
+    background-image: radial-gradient(ellipse at bottom, $earth-background, white 80%);
+    h1 {
+      color: $earth-text;
+    }
+  }
+
+  article.what {
+    background-image: radial-gradient(ellipse at bottom, $green-background, white 80%);
+    h1 {
+      color: $green-text;
+    }
+  }
+
+}
+
+footer.why {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0)
+      ),
+    url(hands-in-the-air.png);
+  background-size: cover;
+  height: 43vh;
 }

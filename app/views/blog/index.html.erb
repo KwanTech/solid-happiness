@@ -1,4 +1,18 @@
-<% @posts.each do |post| %>
-  <h2><%= post["title"] %></h2>
-  <%= post["body"].html_safe %>
-<% end %>
+<div class="blog clearfix">
+  <%= render "shared/top_navbar_black" %>
+</div>
+
+<div id="blogs">
+  <section>
+    <% @posts.each do |post| %>
+      <div class="post">
+        <h1 class="title"><%= post["title"] %></h1>
+        <%= post["body"].html_safe %>
+      </div>
+    <% end %>
+  </section>
+
+  <aside class="register-email">
+
+  </aside>
+</div>
