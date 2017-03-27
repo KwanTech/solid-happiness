@@ -3,6 +3,26 @@
 </div>
 
 <div id="blogs">
+  <aside class="register-email">
+    <div class="blog-registration clearfix">
+      <p><strong>FREE EMAIL UPDATES</strong></p>
+      <p class="latest-content">Get the latest content first.</p>
+
+      <%= form_for @person do |f| %>
+        <label>
+          First Name
+          <%= f.text_field :first_name, class: "sign-up" %>
+        </label>
+        <label >
+          Email
+          <%= f.text_field :email, class: "sign-up" %>
+        </label>
+
+        <%= f.submit "Submit", class: "submit-email" %>
+      <% end %>
+    </div>
+  </aside>
+
   <section>
     <% @posts.each do |post| %>
       <div class="post">
@@ -11,8 +31,4 @@
       </div>
     <% end %>
   </section>
-
-  <aside class="register-email">
-
-  </aside>
 </div>

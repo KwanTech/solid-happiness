@@ -5,6 +5,8 @@ class BlogController < ApplicationController
   def index
     @posts = tumblr_blog_client.posts('ltrainpr.tumblr.com', limit: 10, tag: 'quan')["posts"]
 
+    @person = Person.new
+
     respond_to do |format|
       format.html
       format.json { render json: JSON.generate(@posts)}
