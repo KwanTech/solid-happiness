@@ -25,8 +25,8 @@ gem 'sdoc', '= 0.4.1', group: :doc
 # Loads environment variables from `.env`.
 
 gem 'tumblr_client', '=0.8.5'
-gem "paperclip", "=5.0.0"
-gem "aws-sdk", '=2.8.6'
+# gem "paperclip", "=5.0.0"
+# gem "aws-sdk", '=2.8.6'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
