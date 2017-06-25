@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/why', to: 'why#index'
+  get '/register', to: 'people#index'
+  get '/blog', to: 'blog#index'
+  resources :people, only: [:index, :create]
 end

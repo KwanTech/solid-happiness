@@ -18,8 +18,8 @@ gem 'sass-rails', '= 5.0.6'
 gem 'uglifier', '= 3.2.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '= 2.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'neat'
+gem 'tumblr_client'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '= 2.7.0'
