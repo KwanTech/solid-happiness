@@ -3,6 +3,25 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "neat";
 
+// $media-medium-max: (
+//     columns: 12,
+//     gutter: 20px,
+//     media: 'only screen and (max-width: 719px)'
+// );
+// $media-large-min: (
+//     columns: 12,
+//     gutter: 40px,
+//     media: 720px
+// );
+
+$large-tablet-max: (
+    media: 'only screen and (max-width: 950px)'
+);
+
+$tablet-max: (
+    media: 'only screen and (max-width: 755px)'
+);
+
 .home .top-navbar-white {
   ul li a {
     color: #fff;
@@ -36,7 +55,7 @@ header.home {
 }
 
 #main {
-  @include outer-container(1920px);
+  @include grid-container(1920px);
 }
 
 #middle-row {
@@ -45,22 +64,22 @@ header.home {
 }
 
 #home-video {
-  @include shift(2 of 12);
-  @include span-columns(4);
+  @include grid-shift(2 of 12);
+  @include grid-column(4);
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 
-  @include media(max-width 950px) {
-    @include shift(1 of 12);
-    @include span-columns(5);
+  @include grid-media($large-tablet-max) {
+    @include grid-shift(1 of 12);
+    @include grid-column(5);
   }
 
-  @include media(max-width 755px) {
-    @include shift(0 of 12);
-    @include span-columns(12); // or whatever you need for 100% width
+  @include grid-media($tablet-max) {
+    @include grid-shift(0 of 12);
+    @include grid-column(12); // or whatever you need for 100% width
   }
 
   iframe {
@@ -69,21 +88,21 @@ header.home {
 }
 
 .quan-ambo-message {
-  @include span-columns(4);
+  @include grid-column(4);
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 
-  @include media(max-width 950px) {
-    @include shift(1 of 12);
-    @include span-columns(5);
+  @include grid-media($large-tablet-max) {
+    @include grid-shift(1 of 12);
+    @include grid-column(5);
   }
 
-  @include media(max-width 755px) {
-    @include shift(0 of 12);
-    @include span-columns(12); // or whatever you need for 100% width
+  @include grid-media($tablet-max) {
+    @include grid-shift(0 of 12);
+    @include grid-column(12); // or whatever you need for 100% width
   }
 
   h1, h2 {
@@ -113,8 +132,8 @@ header.home {
   height: 100vh;
 
   .dalai-lama {
-    @include shift(3 of 12);
-    @include span-columns(6);
+    @include grid-shift(3 of 12);
+    @include grid-column(6);
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);

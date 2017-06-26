@@ -51,12 +51,12 @@ header.why {
 }
 
 section.why-how-what {
-  @include outer-container(1920px);
+  @include grid-container(1920px);
   height: 100vh;
 
   .heading {
-    @include shift(2 of 12);
-    @include span-columns(2);
+    @include grid-shift(2 of 12);
+    @include grid-column(2);
   }
 
   h1 {
@@ -72,7 +72,7 @@ section.why-how-what {
   }
 
   ul {
-    @include span-columns(6);
+    @include grid-column(6);
     position: relative;
     top: 10%;
 
