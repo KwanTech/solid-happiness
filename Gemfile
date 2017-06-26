@@ -18,8 +18,8 @@ gem 'sass-rails', '= 5.0.6'
 gem 'uglifier', '= 3.2.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '= 2.0'
-gem 'neat'
-gem 'tumblr_client'
+gem 'neat', '= 2.0'
+gem 'tumblr_client', '= 0.8.5'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '= 2.7.0'

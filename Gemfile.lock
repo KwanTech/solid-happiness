@@ -185,7 +185,7 @@ DEPENDENCIES
   byebug (= 9.0.6)
   jbuilder (= 2.7.0)
   listen (= 3.1.5)
-  neat
+  neat (= 2.0)
   pg (= 0.21)
   puma (= 3.9.1)
   rails (= 5.1.1)
@@ -193,7 +193,7 @@ DEPENDENCIES
   sass-rails (= 5.0.6)
   spring (= 2.0.2)
   spring-watcher-listen (= 2.0.1)
-  tumblr_client
+  tumblr_client (= 0.8.5)
   tzinfo-data (= 1.2.3)
   uglifier (= 3.2.0)
   web-console (= 3.5.1)
