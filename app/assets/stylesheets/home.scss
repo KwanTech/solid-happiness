@@ -55,7 +55,7 @@ header.home {
 }
 
 #main {
-  @include grid-container(1920px);
+  @include grid-container;
 }
 
 #middle-row {
@@ -63,10 +63,15 @@ header.home {
   height: 100vh;
 }
 
+// $middle-row--half: (
+//   columns: 4,
+//   gutter: 20px
+// );
+
+
 #home-video {
   @include grid-shift(2 of 12);
-  @include grid-column(4);
-  position: relative;
+  @include grid-column(4 of 12);
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -87,8 +92,10 @@ header.home {
   }
 }
 
+
 .quan-ambo-message {
-  @include grid-column(4);
+  @include grid-shift(2 of 12);
+  @include grid-column(4 of 12);
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);

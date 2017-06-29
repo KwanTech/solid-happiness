@@ -51,7 +51,7 @@ header.why {
 }
 
 section.why-how-what {
-  @include grid-container(1920px);
+  @include grid-container;
   height: 100vh;
 
   .heading {
@@ -72,6 +72,7 @@ section.why-how-what {
   }
 
   ul {
+    @include grid-shift(2 of 12);
     @include grid-column(6);
     position: relative;
     top: 10%;
@@ -111,7 +112,6 @@ section.why-how-what {
       color: $green-text;
     }
   }
-
 }
 
 footer.why {
