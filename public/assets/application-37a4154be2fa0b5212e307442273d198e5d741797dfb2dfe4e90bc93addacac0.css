@@ -1,0 +1,427 @@
+/* line 4, /Users/lionelramos/Quan/app/assets/stylesheets/blog.scss */
+.blog .top-navbar-black ul li a {
+  color: #000;
+}
+
+/* line 9, /Users/lionelramos/Quan/app/assets/stylesheets/blog.scss */
+#blogs {
+  margin-top: 5.5em;
+}
+/* line 25, /Users/lionelramos/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/neat-2.0.0/core/neat/mixins/_grid-container.scss */
+#blogs::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 13, /Users/lionelramos/Quan/app/assets/stylesheets/blog.scss */
+#blogs .post {
+  width: calc(50% - 30px);
+  float: left;
+  margin-left: 20px;
+  margin-left: calc(25% - 25px + 40px);
+}
+/* line 17, /Users/lionelramos/Quan/app/assets/stylesheets/blog.scss */
+#blogs .post .title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+}
+/* line 23, /Users/lionelramos/Quan/app/assets/stylesheets/blog.scss */
+#blogs .post p {
+  font-size: 1.1em;
+  font-weight: 100;
+}
+/* line 29, /Users/lionelramos/Quan/app/assets/stylesheets/blog.scss */
+#blogs .register-email {
+  width: calc(25% - 25px);
+  float: left;
+  margin-left: 20px;
+  position: absolute;
+  height: 15em;
+  margin-top: 1.66em;
+}
+/* line 35, /Users/lionelramos/Quan/app/assets/stylesheets/blog.scss */
+#blogs .register-email .blog-registration {
+  left: calc(33.33333% - 26.66667px + 20px);
+  position: relative;
+  width: calc(66.66667% - 33.33333px);
+  float: left;
+  margin-left: 20px;
+}
+/* line 39, /Users/lionelramos/Quan/app/assets/stylesheets/blog.scss */
+#blogs .register-email .blog-registration p {
+  margin: .25em;
+  margin-left: 0;
+}
+/* line 44, /Users/lionelramos/Quan/app/assets/stylesheets/blog.scss */
+#blogs .register-email .blog-registration .latest-content {
+  font-size: .85em;
+}
+/* line 48, /Users/lionelramos/Quan/app/assets/stylesheets/blog.scss */
+#blogs .register-email .blog-registration .sign-up {
+  width: 100%;
+  height: 2em;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+/* line 58, /Users/lionelramos/Quan/app/assets/stylesheets/blog.scss */
+#blogs .register-email .blog-registration .submit-email {
+  font-size: 1em;
+}
+/* line 26, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+.home .top-navbar-white ul li a {
+  color: #fff;
+}
+
+/* line 31, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+header.home {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(zen-rocks-path.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+/* line 42, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+.home .hero-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+/* line 50, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+.home .hero-message h1 {
+  font-size: 300%;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+/* line 25, /Users/lionelramos/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/neat-2.0.0/core/neat/mixins/_grid-container.scss */
+#main::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* line 61, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+#middle-row {
+  width: 100%;
+  height: 100vh;
+}
+
+/* line 66, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+#home-video {
+  left: calc(16.66667% - 23.33333px + 20px);
+  position: relative;
+  width: calc(33.33333% - 26.66667px);
+  float: left;
+  margin-left: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 950px) {
+  /* line 66, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+  #home-video {
+    left: calc(8.33333% - 21.66667px + 20px);
+    position: relative;
+    width: calc(41.66667% - 28.33333px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 755px) {
+  /* line 66, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+  #home-video {
+    left: calc(0% - 20px + 20px);
+    position: relative;
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+/* line 84, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+#home-video iframe {
+  display: block;
+}
+
+/* line 90, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+.quan-ambo-message {
+  left: calc(16.66667% - 23.33333px + 20px);
+  position: relative;
+  width: calc(33.33333% - 26.66667px);
+  float: left;
+  margin-left: 20px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 950px) {
+  /* line 90, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+  .quan-ambo-message {
+    left: calc(8.33333% - 21.66667px + 20px);
+    position: relative;
+    width: calc(41.66667% - 28.33333px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 755px) {
+  /* line 90, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+  .quan-ambo-message {
+    left: calc(0% - 20px + 20px);
+    position: relative;
+    width: calc(100% - 40px);
+    float: left;
+    margin-left: 20px;
+  }
+}
+/* line 109, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+.quan-ambo-message h1, .quan-ambo-message h2 {
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+/* line 114, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+.quan-ambo-message .we-believe {
+  font-size: 2em;
+}
+/* line 118, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+.quan-ambo-message .evolving {
+  font-weight: 400;
+  font-size: 2.5em;
+}
+/* line 123, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+.quan-ambo-message .journey {
+  font-weight: 100;
+  font-size: 1.25em;
+}
+
+/* line 130, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+#bottom-row {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+}
+/* line 135, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+#bottom-row .dalai-lama {
+  left: calc(25% - 25px + 20px);
+  position: relative;
+  width: calc(50% - 30px);
+  float: left;
+  margin-left: 20px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* line 144, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+#bottom-row .dalai-lama .man {
+  color: white;
+  margin-top: .25em;
+  margin-bottom: .25em;
+  text-align: center;
+  font-style: italic;
+}
+/* line 152, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+#bottom-row .dalai-lama .humanity {
+  font-size: 1.5em;
+  font-weight: 100;
+}
+/* line 157, /Users/lionelramos/Quan/app/assets/stylesheets/home.scss */
+#bottom-row .dalai-lama .sacrifices-his-health {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+/* line 1, /Users/lionelramos/Quan/app/assets/stylesheets/top_navbar.scss */
+.top-navbar-white, .top-navbar-black {
+  position: absolute;
+  background-color: transparent;
+  padding: 0 2em 0 1em;
+  width: 100vw;
+}
+/* line 7, /Users/lionelramos/Quan/app/assets/stylesheets/top_navbar.scss */
+.top-navbar-white .nav-logo, .top-navbar-black .nav-logo {
+  float: left;
+  width: 9em;
+  height: auto;
+  margin: 1em 0 0 0;
+}
+/* line 13, /Users/lionelramos/Quan/app/assets/stylesheets/top_navbar.scss */
+.top-navbar-white .nav-logo a, .top-navbar-black .nav-logo a {
+  display: block;
+}
+/* line 18, /Users/lionelramos/Quan/app/assets/stylesheets/top_navbar.scss */
+.top-navbar-white ul, .top-navbar-black ul {
+  list-style: none;
+  float: right;
+  text-align: left;
+  margin: 1.5em 2em 1em 0;
+}
+/* line 24, /Users/lionelramos/Quan/app/assets/stylesheets/top_navbar.scss */
+.top-navbar-white ul li, .top-navbar-black ul li {
+  display: inline-block;
+}
+/* line 27, /Users/lionelramos/Quan/app/assets/stylesheets/top_navbar.scss */
+.top-navbar-white ul li a, .top-navbar-black ul li a {
+  text-decoration: none;
+  padding: 1em 1em 1em 3em;
+  font-weight: 100;
+}
+/* line 14, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+.why .hero-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+/* line 22, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+.why .hero-message h1 {
+  font-size: 3.5em;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+/* line 29, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+.why .hero-message h2 {
+  font-weight: 100;
+  font-size: 0.8em;
+  letter-spacing: .14em;
+}
+
+/* line 37, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+.why .top-navbar-white ul li a {
+  color: #fff;
+}
+
+/* line 42, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+header.why {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(people-team.png);
+  background-size: cover;
+  height: 100vh;
+}
+
+/* line 53, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what {
+  height: 100vh;
+}
+/* line 25, /Users/lionelramos/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/neat-2.0.0/core/neat/mixins/_grid-container.scss */
+section.why-how-what::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+/* line 57, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what .heading {
+  left: calc(16.66667% - 23.33333px + 20px);
+  position: relative;
+  width: calc(16.66667% - 23.33333px);
+  float: left;
+  margin-left: 20px;
+}
+/* line 62, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+/* line 67, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what h2 {
+  font-size: 1.5em;
+  font-weight: 100;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+/* line 74, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what ul {
+  left: calc(16.66667% - 23.33333px + 20px);
+  position: relative;
+  width: calc(50% - 30px);
+  float: left;
+  margin-left: 20px;
+  position: relative;
+  top: 10%;
+}
+/* line 80, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what ul li {
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+}
+/* line 86, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what .why, section.why-how-what .how {
+  height: 33.33vh;
+}
+/* line 90, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what .what {
+  height: 33.34vh;
+}
+/* line 94, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what article.why {
+  background-image: radial-gradient(ellipse at bottom, #d9e8f2, white 80%);
+}
+/* line 97, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what article.why h1 {
+  color: #29abe2;
+}
+/* line 102, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what article.how {
+  background-image: radial-gradient(ellipse at bottom, #f5e8de, white 80%);
+}
+/* line 104, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what article.how h1 {
+  color: #998675;
+}
+/* line 109, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what article.what {
+  background-image: radial-gradient(ellipse at bottom, #d9e8d4, white 80%);
+}
+/* line 111, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+section.why-how-what article.what h1 {
+  color: #3d5c4d;
+}
+
+/* line 117, /Users/lionelramos/Quan/app/assets/stylesheets/why.scss */
+footer.why {
+  background: linear-gradient(transparent, transparent), url(hands-in-the-air.png);
+  background-size: cover;
+  height: 43vh;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+
+html, body {
+  overflow-x: hidden;
+  overflow-y:auto;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
