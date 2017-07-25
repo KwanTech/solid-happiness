@@ -6,12 +6,18 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
+function Blog(props) {
+  return (
+    <p>{props.blog.body}</p>
+  )
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const node = document.getElementById('blog')
   const data = JSON.parse(node.getAttribute('data'))
 
   ReactDOM.render(
-    <Blog blog={data} />,
+    <Blog blog={data[0]} />,
     document.body.appendChild(document.createElement('div')),
   )
 })
