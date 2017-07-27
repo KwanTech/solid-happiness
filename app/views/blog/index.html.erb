@@ -5,12 +5,12 @@
 
 <div id="blogs">
 
-  <section>
+  <section id="posts-grid">
     <% @posts.each do |post| %>
       <div class="post">
         <h1 class="title"><%= truncate(post["title"], length: 39) %></h1>
         <p><%= truncate(post["body"], length: 450, escape: false) %></p>
-        <div class="read-more-container"><strong><%= link_to 'Read more', '#', class: 'read-more' %></strong></div>
+        <div class="read-more-container"><strong><%= link_to 'Read more', '#', class: 'read-more', data: {post_id: post["id"]} %></strong></div>
       </div>
     <% end %>
   </section>

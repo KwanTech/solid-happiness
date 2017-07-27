@@ -16,8 +16,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const node = document.getElementById('blog')
   const data = JSON.parse(node.getAttribute('data'))
 
-  ReactDOM.render(
-    <Blog blog={data[0]} />,
-    document.body.appendChild(document.createElement('div')),
-  )
+  document.getElementById('posts-grid').addEventListener('click', function(ev) {
+    ev.preventDefault();
+    const readMe = ev.target.className
+
+    if (readMe === 'read-more') {
+      let post = getPost(data, ev.target.getAttribute('data-post-id'))
+      console.log()
+      ReactDOM.render(
+        <Blog blog={post} />,
+        ev.currentTarget,
+      )
+    }
+  });
 })
+
+function getPost(posts, postId) {
+  for(var postObject of posts) {
+    if (postObject["id"].toString() === postId) {
+      return postObject
+    }
+  }
+}
+
