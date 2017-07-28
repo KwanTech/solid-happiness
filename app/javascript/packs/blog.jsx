@@ -8,26 +8,32 @@ import PropTypes from 'prop-types';
 
 function Blog(props) {
   return (
-    <p>{props.blog.body}</p>
+    <div>
+      <p>{props.blog.body}</p>
+      <a href="#" className="back-to-posts">Back</a>
+    </div>
   )
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  const node = document.getElementById('blog')
-  const data = JSON.parse(node.getAttribute('data'))
+  const node = document.getElementById('blog');
+  const data = JSON.parse(node.getAttribute('data'));
+  const postsGrid = document.getElementById('posts-grid');
+  const postsHtml = postsGrid.innerHTML
 
-  document.getElementById('posts-grid').addEventListener('click', function(ev) {
+  postsGrid.addEventListener('click', function(ev) {
     ev.preventDefault();
-    const readMe = ev.target.className
+    let readMe = ev.target.className;
 
     if (readMe === 'read-more') {
       let post = getPost(data, ev.target.getAttribute('data-post-id'))
-      console.log()
       ReactDOM.render(
         <Blog blog={post} />,
         ev.currentTarget,
       )
-    }
+    } else if (readMe === "back-to-posts") {
+      postsGrid.innerHTML = postsHtml;
+    };
   });
 })
 
