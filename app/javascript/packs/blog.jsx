@@ -52,7 +52,7 @@ function renderBlog (blog, container) {
 function getPost(posts, postId) {
   for(let [index, postObject] of posts.entries()) {
     if (postObject["id"].toString() === postId) {
-      postObject["nextBlogId"] = posts[index + 1]["id"]
+      postObject["nextBlogId"] = posts[index + 1] ? posts[index + 1]["id"] : posts[0]["id"]
       return postObject
     }
   }
