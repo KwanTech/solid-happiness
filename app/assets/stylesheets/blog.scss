@@ -1,6 +1,12 @@
 @import "neat";
 
-.blog .top-navbar-black {
+@mixin nav-links {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.blog-page .top-navbar-black {
   ul li a {
     color: #000;
   }
@@ -35,9 +41,7 @@
       position: absolute;
 
       .read-more {
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #000;
+        @include nav-links;
       }
     }
   }
@@ -45,6 +49,32 @@
   .post:first-child, .post:nth-child(2) {
     border-top: none;
     margin-top: 0;
+  }
+
+  .blog {
+    @include grid-shift(2 of 12);
+    @include grid-column(8);
+
+    .title {
+      font-size: 4.5em;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.25em;
+      font-weight: 100;
+      line-height: 1.5;
+    }
+
+    .back-to-posts {
+      @include nav-links;
+    }
+
+    .next-blog {
+      @include nav-links;
+      float: right;
+    }
   }
 
 
