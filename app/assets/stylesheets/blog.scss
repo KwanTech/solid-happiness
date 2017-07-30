@@ -52,8 +52,8 @@
   }
 
   .blog {
-    @include grid-shift(1 of 12);
-    @include grid-column(10);
+    @include grid-shift(2 of 12);
+    @include grid-column(8);
 
     .title {
       font-size: 4.5em;
@@ -62,8 +62,9 @@
     }
 
     p {
-      font-size: 1.75em;
+      font-size: 1.25em;
       font-weight: 100;
+      line-height: 1.5;
     }
 
     .back-to-posts {
