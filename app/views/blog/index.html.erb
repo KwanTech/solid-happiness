@@ -7,32 +7,13 @@
   <section id="posts-grid">
     <% @posts.each do |post| %>
       <div class="post">
-        <h1 class="title"><%= truncate(post["title"], length: 39) %></h1>
+        <h1 class="title"><%= truncate(post["title"], length: 25) %></h1>
         <p><%= truncate(post["body"], length: 450, escape: false) %></p>
         <div class="read-more-container"><strong><%= link_to 'Read more', '#', class: 'read-more', data: {post_id: post["id"]} %></strong></div>
       </div>
     <% end %>
   </section>
 </div>
-  <!-- <aside class="register-email">
-    <div class="blog-registration clearfix">
-      <p><strong>FREE EMAIL UPDATES</strong></p>
-      <p class="latest-content">Get the latest content first.</p>
-
-      <%#= form_for @person do |f| %>
-        <label>
-          First Name
-          <%#= f.text_field :first_name, class: "sign-up" %>
-        </label>
-        <label >
-          Email
-          <%#= f.text_field :email, class: "sign-up" %>
-        </label>
-
-        <%#= f.submit "Submit", class: "submit-email" %>
-      <%# end %>
-    </div>
-  </aside> -->
 
 <%= content_tag :div,
   id: "blog",

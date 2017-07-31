@@ -1,5 +1,10 @@
 @import "neat";
 
+$mobile-layout-grid:(
+  columns: 1,
+  media: "(max-width: 799px)",
+);
+
 @mixin nav-links {
   text-decoration: none;
   text-transform: uppercase;
@@ -17,11 +22,18 @@
   margin-top: 5.5em;
 
   .post {
-    @include grid-column(6);
+    @include grid-shift(1 of 12);
+    @include grid-column(5);
     height: 448px;
     position: relative;
     border-top: 1px solid black;
     margin-top: 2em;
+
+    @include grid-media($mobile-layout-grid) {
+      @include grid-shift(0 of 1);
+      @include grid-column(1);
+      height: auto;
+    }
 
     .title {
       text-align: center;
@@ -49,11 +61,23 @@
   .post:first-child, .post:nth-child(2) {
     border-top: none;
     margin-top: 0;
+
+  }
+
+  .post:nth-child(2) {
+    @include grid-media($mobile-layout-grid) {
+      border-top: 1px solid black;
+    }
   }
 
   .blog {
     @include grid-shift(2 of 12);
     @include grid-column(8);
+
+    @include grid-media($mobile-layout-grid) {
+      @include grid-shift(0 of 1);
+      @include grid-column(1)
+    }
 
     .title {
       font-size: 4.5em;
@@ -76,41 +100,4 @@
       float: right;
     }
   }
-
-
-  // .register-email {
-  //   @include grid-column(3);
-  //   position: absolute;
-  //   height: 15em;
-  //   margin-top: 1.66em;
-
-  //   .blog-registration {
-  //     @include grid-shift(1 of 3);
-  //     @include grid-column(2 of 3);
-
-  //     p {
-  //       margin: .25em;
-  //       margin-left: 0;
-  //     }
-
-  //     .latest-content {
-  //       font-size: .85em;
-  //     }
-
-  //     .sign-up {
-  //       width: 100%;
-  //       height: 2em;
-  //       border-radius: 3px;
-  //       border-style: solid;
-  //       border-width: 1px;
-  //       margin-top: .5em;
-  //       margin-bottom: .5em;
-  //     }
-
-  //     .submit-email {
-  //       font-size: 1em;
-  //     }
-  //   }
-
-  // }
 }
