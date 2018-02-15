@@ -1,0 +1,73 @@
+// Place all the styles related to the People controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "neat";
+
+$mobile-layout-grid:(
+  columns: 1,
+  media: "(max-width: 799px)",
+);
+
+@mixin nav-links {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.guidance-page .top-navbar-black {
+  ul li a {
+    color: #000;
+  }
+}
+
+.book-summaries {
+  @include grid-container;
+  margin-top: 5.5em;
+
+  .post {
+    @include grid-shift(1 of 12);
+    @include grid-column(5);
+    height: 448px;
+    position: relative;
+    border-top: 1px solid black;
+    margin-top: 2em;
+
+    @include grid-media($mobile-layout-grid) {
+      @include grid-shift(0 of 1);
+      @include grid-column(1);
+      height: auto;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 3em;
+      font-weight: 600;
+      text-transform: uppercase;
+
+      a {
+        @include nav-links;
+      }
+
+      a:hover {
+        color: red;
+      }
+    }
+
+    p {
+      font-size: 1.1em;
+      font-weight: 100;
+    }
+  }
+
+  .post:first-child, .post:nth-child(2) {
+    border-top: none;
+    margin-top: 0;
+
+  }
+
+  .post:nth-child(2) {
+    @include grid-media($mobile-layout-grid) {
+      border-top: 1px solid black;
+    }
+  }
+}
